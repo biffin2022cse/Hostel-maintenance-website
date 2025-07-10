@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Login Page Animations */
+@keyframes slowPan {
+  0% {
+    transform: scale(1.2) translate(0, 0);
+  }
+  25% {
+    transform: scale(1.25) translate(-2%, -1%);
+  }
+  50% {
+    transform: scale(1.2) translate(-1%, -2%);
+  }
+  75% {
+    transform: scale(1.25) translate(1%, -1%);
+  }
+  100% {
+    transform: scale(1.2) translate(0, 0);
+  }
+}
+
+/* Login Page Background */
+.login-background {
+  background-image: url('https://www.ajce.in/home/images/college_small_pic_01.jpg');
+  background-size: 120% 120%;
+  background-position: center;
+  animation: slowPan 20s ease-in-out infinite alternate;
+}
+
+/* Glass morphism effect for login form */
+.login-form {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Enhanced input styling */
+.login-input {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* Enhanced button hover effects */
+.login-button {
+  transition: all 0.2s ease-in-out;
+}
+
+.login-button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Background overlay gradients */
+.login-overlay {
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.3) 0%, rgba(67, 56, 202, 0.3) 100%);
+}
